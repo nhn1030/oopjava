@@ -6,8 +6,6 @@ public class Main {
     // 2. 압축 -> Exam.zip
     // 3. jar -> Exam.jar
     public static void main(String[] args) {
-        Exam exam = new Exam(1,1,1);
 
-        System.out.print(exam.total());
     }
 }
