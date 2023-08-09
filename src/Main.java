@@ -1,4 +1,4 @@
-import part3.ex5.splitUICode.Exam;
+package src;
 
 public class Main {
     // 코드 재사용 방법

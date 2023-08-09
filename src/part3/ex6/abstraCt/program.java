@@ -4,7 +4,8 @@ public class program {
 
     public static void main (String[] args) {
 
-        newExam exam = new newExam();
-
+        ExamConsole console = new newExamConsole();
+        console.input();
+        console.print();
     }
 }
