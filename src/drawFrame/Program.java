@@ -1,2 +1,12 @@
-package src.drawFrame;public class Program {
+package src.drawFrame;
+
+public class Program {
+
+    public static void main (String[] args) {
+
+        gameframe frame = new gameframe();
+        frame.setVisible(true);
+
+
+    }
 }
