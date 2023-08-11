@@ -7,20 +7,21 @@ import java.util.Scanner;
 
 public class Program {
 
-    public static void main (String[] args) throws IOException {
+    public static void main (String[] args) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException {
 
         FileInputStream fis = new FileInputStream("oopJavaStudy/src/Interface2/setting.txt");
         Scanner scan = new Scanner(fis);
         String className = scan.nextLine();
-
         scan.close();
         fis.close();
 
-//        A a = new A();
-//        X x = ;
-//
-//        a.setX(x);
-//
-//        a.print();
+        Class clazz = Class.forName(className);
+
+        A a = new A();
+        X x = (X) clazz.newInstance();
+
+        a.setX(x);
+
+        a.print();
     }
 }
