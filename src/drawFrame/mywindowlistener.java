@@ -1,27 +1,13 @@
 package src.drawFrame;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class gameframe extends Frame implements WindowListener {
+public class mywindowlistener implements WindowListener {
 
 
-    public gameframe() {
-//        WindowListener listener = new mywindowlistener();
-        this.addWindowListener(this);
-        this.setVisible(true);
-    }
 
-    @Override
-    public void paint(Graphics g) {
-
-        super.paint(g);
-
-        g.drawRect(100, 100, 200, 100);
-
-    }
 
     @Override
     public void windowOpened(WindowEvent e) {
@@ -30,7 +16,7 @@ public class gameframe extends Frame implements WindowListener {
 
     @Override
     public void windowClosing(WindowEvent e) {
-        JOptionPane.showMessageDialog(this, "goodbye");
+        JOptionPane.showMessageDialog(null, "goodbye");
         System.exit(0);
     }
 
